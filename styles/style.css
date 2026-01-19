@@ -2,3 +2,71 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+
+/* ---------------Navbar-Related-Styles--------------- */
+nav{
+    background-color: #1A0B2E;
+    border-bottom:1px solid #6536a3;
+}
+.navbar-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+}
+#brand-name{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: white;
+}
+.navbar-container img{
+    display: none;
+}
+.links-container{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    color: white;
+    font-weight: 500;
+    line-height: 120%;
+}
+.navbar-container button{
+    width: 135px;
+    height: 44px;
+    padding: 12px 16px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10000px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------Media-Query[Small-Device]--------------- */
+@media screen  and (max-width:576px) {
+    nav{
+        padding: 20px;
+    }
+    .navbar-container{
+        height: 60px;
+    }
+    .links-container{
+        display: none;
+    }
+    .navbar-container img{
+    display: block;
+    width: 24px;
+    height: 24px;
+    }
+    .navbar-container button{
+    display: none;
+    }
+}
