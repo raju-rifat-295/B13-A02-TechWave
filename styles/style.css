@@ -307,6 +307,90 @@ nav{
 }
 
 
+/* ---------------Episode-Related-Styles--------------- */
+
+.episode{
+    background-color: #1A0B2E;
+    border: 2px solid white;
+}
+
+.episode-container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    height: 1276px;
+    /* border: 2px solid white; */
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.episode-title{
+    color: white;
+    font-size: 3rem;
+    line-height: auto;
+    font-weight: 700;
+    text-align: center;
+}
+
+.episode-video-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    border: 2px solid white;
+}
+.video-card{
+    width: 380px;
+    height: 440px;
+    border-radius: 40px;
+    background-color: #250D44;
+    overflow: hidden;
+}
+.video-card iframe{
+    width: 380px;
+    height: 214px;
+}
+.video-info{
+    padding: 24px;
+    text-align: left;
+}
+
+.video-title{
+    font-size: 1.5rem;
+    color: white;
+    line-height: auto;
+    font-weight: 700;
+}
+
+.video-description{
+    font-size: 1rem;
+    line-height: 24px;
+    color: white;
+    margin-top: 8px;
+}
+
+.time-container{
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    align-items: center;
+}
+
+.time-container img{
+    width: 16px;
+    height: 16px;
+}
+
+.time{
+    color: #00FF88;
+    font-weight: 600;
+}
+
+
+
+
+
 
 
 
@@ -376,6 +460,7 @@ nav{
     margin-top: 40px;
     }
     .choose-card-container{
+    width: 400px;
     margin-top: 40px;
     display: grid;
     grid-template-areas: 
@@ -393,5 +478,19 @@ nav{
     /* border: 2px solid white; */
     padding-top: 40px;
     padding-bottom: 40px;
+    }
+    .episode-video-container{
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .episode-container{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    height: 1276px;
+    /* border: 2px solid white; */
+    padding-top: 120px;
+    padding-bottom: 120px;
     }
 }
