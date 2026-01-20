@@ -303,14 +303,13 @@ nav{
 
 .episode{
     background-color: #1A0B2E;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 
 .episode-container{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    height: 1276px;
     /* border: 2px solid white; */
     padding-top: 120px;
     padding-bottom: 120px;
@@ -328,38 +327,35 @@ nav{
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 .video-card{
     width: 380px;
-    height: 440px;
+    /* height: 440px; */
     border-radius: 40px;
     background-color: #250D44;
     overflow: hidden;
 }
 .video-card iframe{
-    width: 380px;
+    width: 100%;
     height: 214px;
 }
 .video-info{
     padding: 24px;
     text-align: left;
 }
-
 .video-title{
     font-size: 1.5rem;
     color: white;
     line-height: auto;
     font-weight: 700;
 }
-
 .video-description{
     font-size: 1rem;
     line-height: 24px;
     color: white;
     margin-top: 8px;
 }
-
 .time-container{
     display: flex;
     gap: 6px;
@@ -368,16 +364,66 @@ nav{
     padding-bottom: 2px;
     align-items: center;
 }
-
 .time-container img{
     width: 16px;
     height: 16px;
 }
-
 .time{
     color: #00FF88;
     font-weight: 600;
 }
+
+.meet-host{
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 120px;
+}
+.host-card{
+    background-color: #230E3D;
+    border-radius: 40px;
+    margin-top: 40px;
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+}
+.host-card-info{
+    width: 896px;
+}
+.host-name{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+.host-info{
+    margin-top: 16px;
+    color: white;
+    font-size: 1rem;
+    line-height: 24px;
+}
+.host-links{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 184px;
+}
+.host-links div{
+    border: 2px solid #533C72;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -493,12 +539,45 @@ nav{
     }
 
     .episode-container{
-    max-width: 400px;
+    padding: 40px 20px;
+    }
+    .episode-title{
+    font-size: 2rem;
+    }
+    .episode-video-container{
+    flex-direction: column;
+    margin-top: 16px;
+    gap: 16px;
+    }
+    .video-card{
     width: 100%;
-    margin: 0 auto;
-    height: 1276px;
-    /* border: 2px solid white; */
-    padding-top: 120px;
-    padding-bottom: 120px;
+    }
+    .video-card iframe{
+    width: 100%;
+    height: 225px;
+    /* height: 100%; */
+    }
+
+    .meet-host{
+    font-size: 2rem;
+    margin-top: 60px;
+    }
+    .host-card{
+    margin-top: 24px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    }
+    .host-image{
+        height: 150px;
+        width: 150px;
+    }
+    .host-card-info{
+    width: 100%;
+    margin-top: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 }
