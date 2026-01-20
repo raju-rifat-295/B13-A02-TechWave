@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .inter-font{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -226,7 +231,80 @@ nav{
 }
 
 
+/* ---------------Choose-Related-Styles--------------- */
+.choose{
+    background-color: #230E3D;
+    /* border: 2px solid white; */
+}
+.choose-container{
+    max-width: 1200px;
+    width: 100%;
+    /* text-align: center; */
+    margin: 0 auto;
+    height: 1121px;
+    /* border: 2px solid white; */
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.choose-title{
+    color: white;
+    font-size: 3rem;
+    line-height: auto;
+    font-weight: 700;
+    text-align: center;
+}
 
+.choose-card{
+    padding: 40px;
+    text-align: left;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.choose-card img{
+    width: 60px;
+    height: 60px;
+}
+.choose-card .choose-card-title{
+    font-size: 1.5rem;
+    color: white;
+    line-height: auto;
+    font-weight: 700;
+    margin-top: 16px;
+}
+.choose-card .choose-card-description{
+    line-height: 24px;
+    color: white;
+    margin-top: 16px;
+}
+
+#headphone{
+    grid-area: headphone;
+}
+#device{
+    grid-area: device;
+}
+#location{
+    grid-area: location;
+}
+#bizli{
+    grid-area: bizli;
+}
+#resource{
+    grid-area: resource;
+}
+
+.choose-card-container{
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas: 
+    "headphone device device"
+    "headphone location location"
+    "bizli    bizli  resource";
+    gap: 30px;
+}
 
 
 
@@ -292,8 +370,28 @@ nav{
     padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
+    height: 700px;
     }
     .podcast-rating{
     margin-top: 40px;
+    }
+    .choose-card-container{
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas: 
+    "headphone"
+    "device"
+    "location"
+    "bizli"
+    "resource";
+    gap: 30px;
+    }
+    .choose-container{
+    max-width: 1200px;
+    width: 100%;
+    height: 1650px;
+    /* border: 2px solid white; */
+    padding-top: 40px;
+    padding-bottom: 40px;
     }
 }
