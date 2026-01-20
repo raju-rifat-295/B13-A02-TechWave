@@ -155,7 +155,7 @@ nav{
 }
 
 .banner-btn-container #green-btn{
-    width: 201px;
+    width: 147px;
     height: 44px;
     padding: 12px 20px;
     color: #00FF88;
@@ -177,15 +177,9 @@ nav{
     max-width: 1200px;
     width: 100%;
     text-align: center;
-    margin: 0 auto;
-    height: 646px;
-    /* border: 2px solid white; */
+    margin:0 auto;
     padding-top: 50px;
     padding-bottom: 120px;
-}
-.podcast-info{
-    /* border: 1px solid white; */
-    height: 222px;
 }
 .podcast-title{
     color: white;
@@ -206,7 +200,6 @@ nav{
     color: #ffffff2f;
     margin-top: 80px;
 }
-
 .podcast-rating{
     margin-top: 80px;
     /* border: 2px solid white; */
@@ -215,7 +208,7 @@ nav{
     gap: 80px;
 }
 .rating-card{
-    width: 240px;
+    width: 240px; 
     height: 94px;
 }
 .rating-card h2{
@@ -239,10 +232,7 @@ nav{
 .choose-container{
     max-width: 1200px;
     width: 100%;
-    /* text-align: center; */
     margin: 0 auto;
-    height: 1121px;
-    /* border: 2px solid white; */
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -304,6 +294,8 @@ nav{
     "headphone location location"
     "bizli    bizli  resource";
     gap: 30px;
+    max-width: 1200px;
+    width: 100%;
 }
 
 
@@ -439,46 +431,62 @@ nav{
     line-height: auto;
     color: white;
     font-size: 1rem;
-    /* white-space: nowrap; */
     text-align: center;
     }
-    .podcast-rating{
-    margin-top: 80px;
-    /* border: 2px solid white; */
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    }
+
     .podcast-container{
+    padding: 40px 20px;
+    }
+    .podcast-title{
+    font-size: 2rem;
+    }
+    .podcast-container hr{
+    margin-top: 40px;
+    }
+    .podcast-rating{
+    margin-top: 40px;
+    /* border: 2px solid red; */
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    place-items:center;
+    }
+    .rating-card{
+    width: 100%; 
+    }
+    .rating-card h2{
+    font-size: 30px;
+    }
+    .rating-card p{
+    margin-top: 6px;
+    color: white;
+    line-height: 20px;
+    font-size: 10px;
+    }
+
+    .choose-container{
+    max-width: 400px;
+    width: 100%;
+    /* border: 2px solid white; */
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 700px;
     }
-    .podcast-rating{
-    margin-top: 40px;
+    .choose-title{
+    font-size: 2rem;
     }
     .choose-card-container{
-    width: 400px;
-    margin-top: 40px;
-    display: grid;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 16px;
     grid-template-areas: 
     "headphone"
     "device"
     "location"
     "bizli"
     "resource";
-    gap: 30px;
+    gap: 16px;
+    padding: 0 20px;
     }
-    .choose-container{
-    max-width: 1200px;
-    width: 100%;
-    height: 1650px;
-    /* border: 2px solid white; */
-    padding-top: 40px;
-    padding-bottom: 40px;
-    }
+    
     .episode-video-container{
     flex-direction: column;
     align-items: center;
